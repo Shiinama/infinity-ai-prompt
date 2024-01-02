@@ -61,3 +61,4 @@ parameters:
   - id: PctHjxeKTfJSD86gCFkY3
     key: output
     from: editor
+description: 去掉重复的知识点

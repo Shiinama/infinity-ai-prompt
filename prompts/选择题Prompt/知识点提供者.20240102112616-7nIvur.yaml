@@ -79,3 +79,4 @@ name: 知识点提供者
 presencePenalty: 0
 frequencyPenalty: 2
 temperature: 0.5
+description: 提供Javascript的Prompt
