@@ -1,0 +1,13 @@
+model: gpt-3.5-turbo
+type: prompt
+id: 20240114005723-hJIshT
+createdAt: 2024-01-13T16:57:23.095Z
+updatedAt: 2024-01-13T16:57:23.095Z
+createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+prompts:
+  - type: message
+    data:
+      id: iDJJcft7eZa9c0LAycZMZ
+      role: user
+      content: b

@@ -1,0 +1,51 @@
+type: prompt
+id: 20240113162410-fCvFug
+createdAt: 2024-01-13T08:24:10.474Z
+updatedAt: 2024-01-13T08:24:10.474Z
+createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+prompts:
+  - type: executeBlock
+    data:
+      id: 20240113173248-wnjY1K
+      tools:
+        - id: 20240113153430-WuiiW8
+          parameters: {}
+      variable: knowledge
+  - type: executeBlock
+    data:
+      id: 20240113164745-BnygNt
+      tools:
+        - id: 20240113154210-Y7CMny
+          parameters: {}
+      variable: result
+  - type: message
+    data:
+      id: 4pXLIq0mjd3hGBTZmwwLU
+      role: system
+      content: >-
+        你需要检查{{result}}的内容是否满足以下条件，如果不满足请修正他
+
+        1. 格式是否正确，为<JSON>格式，且包含<question>、<options>、<score>、<explain>、<answer>。
+
+        2. <explain> 是否是有深度且正确的，<options>有4个选项且只有一个正确答案选项具有意义，<score>的难度系数的打分是否正常
+
+        3. 是否有注释，如果有去掉注释
+
+        4. 输出的内容是否是中文，如果不是请翻译
+
+
+
+        最终你需要重新经过检查后，输出一份修正后了<JSON>格式的单选题数组，仅包含<JSON数组>不包含其他任何内容
+name: check
+parameters:
+  - id: pkTaIKZBgCU7mqsKAU4N0
+    key: category
+  - id: yo7ekZ7YX1ndXb6m1raC8
+    key: min
+  - id: Mheyxt0kpiRWRyStN7Kyh
+    key: max
+  - id: CivlmqnOu5R3yB9JUrKmB
+    key: result
+model: gpt-3.5-turbo-16k
+temperature: 1.1

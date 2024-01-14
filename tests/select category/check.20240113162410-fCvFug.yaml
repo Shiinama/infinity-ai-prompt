@@ -1,0 +1,92 @@
+id: 20240113162410-fCvFug
+tests:
+  - id: 1705146162641-3XFlDRqB9aiWRsEx
+    parameters:
+      category: React hooks
+      min: "3"
+      max: "10"
+      result: ""
+    createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+    output: >-
+      [
+        // Questions about "useState"
+        {
+          "question": "哪个钩子函数用于管理函数组件的状态？",
+          "options": [
+            {"label": "A", "text": "useEffect"},
+            {"label": "B", "text": "useContext"},
+            {"label": "C", "text": "useState"},
+            {"label": "D", "text": "useReducer"}
+          ],
+          "explain": "useState 钩子函数用于管理函数组件的状态。",
+          "answer": "C"
+        },
+        {
+          "question": "使用 useState 钩子更新状态的正确方式是什么？",
+          "options": [
+            {"label": "A", "text": "setState(prevState => prevState + 1)"},
+            {"label": "B", "text": "updateState(state => state + 1)"},
+            {"label": "C", "text": "state++"},
+            {"label": "D", "text": "state = state + 1"}
+          ],
+          "explain": "更新状态的正确方式是使用 useState 更新函数的函数形式，如 setState(prevState => prevState + 1)。",
+          "answer": "A"
+        },
+        // More questions about "useState"
+
+        // Questions about "useEffect"
+        {
+          "question": "哪个钩子函数用于在函数组件中执行副作用？",
+          "options": [
+            {"label": "A", "text": "useEffect"},
+            {"label": "B", "text": "useState"},
+            {"label": "C", "text": "useContext"},
+            {"label": "D", "text": "useReducer"}
+          ],
+          "explain": "useEffect 钩子函数用于在函数组件中执行副作用。",
+          "answer": "A"
+        },
+        {
+          "question": "useEffect 的依赖数组中哪个说法是正确的？",
+          "options": [
+            {"label": "A", "text": "它是必需的，并且必须始终为空。"},
+            {"label": "B", "text": "它是可选的，可以留空未定义。"},
+            {"label": "C", "text": "它是必需的，应列出效果中使用的所有外部依赖项。"},
+            {"label": "D", "text": "它是可选的，只有在效果依赖于某些值时才应包含。"}
+          ],
+          "explain": "useEffect 的依赖数组是可选的，只有在效果依赖于某些值时才应包含。",
+          "answer": "D"
+        },
+        // More questions about "useEffect"
+
+        // Questions about "useContext"
+        {
+          "question": "哪个钩子函数用于在函数组件中访问上下文值？",
+          "options": [
+            {"label": "A", "text": "useReducer"},
+            {"label": "B", "text": "useEffect"},
+            {"label": "C", "text": "useContext"},
+            {"label": "D", "text": "useState"}
+          ],
+          "explain": "useContext 钩子函数用于在函数组件中访问上下文值。",
+          "answer": "C"
+        },
+        {
+          "question": "关于 createContext 以下哪个说法是正确的？",
+          "options": [
+            {"label": "A", "text": "它是一个钩子函数，用于在函数组件中创建上下文。"},
+            {"label": "B", "text": "它是一个函数，用于向组件树提供上下文值。"},
+            {"label": "C", "text": "它是一个属性，用于在组件内消费上下文值。"},
+            {"label": "D", "text": "它是一个方法，用于更新组件树中的上下文值。"}
+          ],
+          "explain": "createContext 是一个函数，用于向组件树提供上下文值。",
+          "answer": "B"
+        }
+      ]
+  - id: 1705164897455-wyh8cRa9FETm-L5w
+    parameters:
+      category: React hooks
+      min: "10"
+      max: "15"
+      result: ""
+    createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
