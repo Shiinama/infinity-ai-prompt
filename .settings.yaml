@@ -1,1 +1,17 @@
-{}
+_id: "397218793467674624"
+name: 学境
+description: null
+model: gpt-3.5-turbo
+createdAt: 2024-01-02T02:45:40.332Z
+updatedAt: 2024-01-20T06:06:45.766Z
+createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+pinnedAt: null
+icon: https://bbqaz5tpm7zmfgc6s7p4urdkr7era7fj564f3goiqyy-192-168-0-105.ip.abtnet.io/image-bin/uploads/028bf787919e3e25bd5aca113c5471bb.png
+gitType: default
+temperature: 1
+topP: 1
+presencePenalty: null
+frequencyPenalty: null
+maxTokens: null
+gitAutoSync: true

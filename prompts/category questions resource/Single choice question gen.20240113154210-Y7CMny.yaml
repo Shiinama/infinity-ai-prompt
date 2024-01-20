@@ -76,7 +76,7 @@ prompts:
             "explain": "答案的解释",
             "answer": "答案"
           },]```
-name: Single choice question generators
+name: Single choice question gen
 description: Generate single-choice questions based on the knowledge points
 parameters:
   - id: 4NrF74uim3YO1W14ZC2mU
