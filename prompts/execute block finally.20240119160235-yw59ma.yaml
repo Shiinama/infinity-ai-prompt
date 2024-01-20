@@ -1,0 +1,25 @@
+model: gpt-3.5-turbo
+type: prompt
+id: 20240119160235-yw59ma
+createdAt: 2024-01-19T08:02:35.004Z
+updatedAt: 2024-01-19T08:02:35.004Z
+createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+prompts:
+  - type: executeBlock
+    data:
+      selectType: all
+      tools:
+        - id: 20240116234522-Pp43yh
+      variable: ada
+      role: assistant
+      id: 20240119160334-cKXSDP
+  - type: message
+    data:
+      id: KWoVPxjsUMhfhoxGQJwkJ
+      role: user
+      content: "{{ ada }}"
+name: execute block finally
+parameters:
+  - id: j3TewdReR3ZDBEMtUzxY3
+    key: ""

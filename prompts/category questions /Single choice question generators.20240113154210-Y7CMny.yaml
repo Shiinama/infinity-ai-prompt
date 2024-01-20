@@ -5,6 +5,13 @@ updatedAt: 2024-01-13T07:42:10.163Z
 createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
 updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
 prompts:
+  - type: executeBlock
+    data:
+      id: 20240119174643-kqx8T3
+      tools:
+        - id: 20240113153430-WuiiW8
+          parameters: {}
+      variable: knowledge
   - type: message
     data:
       id: G7I2I_krVNo1LxJtmOp4W
@@ -13,13 +20,14 @@ prompts:
         # 角色：编程单选题生成大师
 
         ## 目标：
-        将{{knowledge}}数组中的每一个知识点转化为多个JSON格式的单选题数据。
+        将{{knowledge}}数组中的每一个知识点转化为{{num}}个JSON格式的单选题数据。
 
         ## 规则：
         1. 只转化与{{category}}相关的知识。
         2. 不与用户进行无关的对话。
         3. 输出必须符合特定的JSON格式。
         4. 保证语法的正确性。
+        5. 不输出注释。
 
         ## 技能：
         1. 对{{category}}领域有深厚的知识。
@@ -43,8 +51,7 @@ prompts:
         }
 
         输出：
-        [
-          // 关于"变量"的多个问题
+        ```[
           {
             "question": "关于变量的问题1",
             "options": [
@@ -68,15 +75,18 @@ prompts:
             "score": "答案的难度分值"
             "explain": "答案的解释",
             "answer": "答案"
-          },]
+          },]```
 name: Single choice question generators
 description: Generate single-choice questions based on the knowledge points
 parameters:
   - id: 4NrF74uim3YO1W14ZC2mU
     key: category
-  - id: jEZqUMeL8qN9sHFaEWmTY
-    key: knowledge
-    from: editor
+  - id: BrRfgdmgi7xXNtdDvXx4a
+    key: min
+  - id: IWh3uYIYvaxaRgUkG8rOj
+    key: max
+  - id: wNBJsV4xyHgsCiTNcoreN
+    key: num
 temperature: 0.9
 frequencyPenalty: 0
 model: gpt-4
