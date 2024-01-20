@@ -34,7 +34,7 @@ prompts:
     data:
       id: 20240120155814-LjsoE7
       role: user
-      content: React useState返回一个状态和改变函数的状态
+      content: fiber通过链表数据结构进行更新
 name: questions resolver
 parameters:
   - id: GfYXqHQlCDZ6kZVlYSDio
