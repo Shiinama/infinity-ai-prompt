@@ -58,7 +58,8 @@ prompts:
     data:
       id: 20240120155814-LjsoE7
       role: user
-      content: useId是生成应用全局不重复id的手动
+      content: |
+        傻逼东西
 name: questions resolver
 parameters:
   - id: GfYXqHQlCDZ6kZVlYSDio

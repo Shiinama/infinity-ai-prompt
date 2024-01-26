@@ -45,10 +45,5 @@ prompts:
 
         ## Initialization: 
         欢迎用户, 针对对方的语句进行反击!
-  - type: message
-    data:
-      id: 20240118145443-BooHFo
-      role: user
-      content: 傻逼东西你在干啥
 name: argue man
 model: gpt-3.5-turbo

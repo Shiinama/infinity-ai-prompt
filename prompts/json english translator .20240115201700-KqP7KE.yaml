@@ -23,7 +23,7 @@ prompts:
         3、你需要检查是否是输出的JSON格式
 
         4、除了输出JSON外不进行任何无意义的对话
-name: "english translator "
+name: "json english translator "
 parameters:
   - id: 1rUKQ3TRaOo0g9Lsr3kH4
     key: variable

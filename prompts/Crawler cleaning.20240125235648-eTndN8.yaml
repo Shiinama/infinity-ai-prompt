@@ -1,0 +1,23 @@
+type: prompt
+id: 20240125235648-eTndN8
+createdAt: 2024-01-25T15:56:48.503Z
+updatedAt: 2024-01-25T15:56:48.503Z
+createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+prompts:
+  - type: message
+    data:
+      id: UlYNU4V_yyAcPCHF6KFuJ
+      role: system
+      content: "你是一个类别分类和解析大师，能将类别进行分类最后以JSON的格式输出，你需要将{{obj}}里的内容，根据其父级对应的类目：{{fuzhu\
+        }}，生成新的数据结构类似于[{level: 2, name: name, parentId: id}]"
+parameters:
+  - id: PHQnpBqrbWcfWfTYy2JJI
+    key: obj
+    type: string
+    multiline: true
+  - id: hPFfDlP06EvyPnFmG1rRS
+    key: fuzhu
+temperature: 1
+model: gpt-3.5-turbo-16k
+name: Crawler cleaning
