@@ -54,12 +54,6 @@ prompts:
           ],
           total: 26,
         }
-  - type: message
-    data:
-      id: 20240120155814-LjsoE7
-      role: user
-      content: |
-        傻逼东西
 name: questions resolver
 parameters:
   - id: GfYXqHQlCDZ6kZVlYSDio

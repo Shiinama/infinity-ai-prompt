@@ -12,6 +12,13 @@ prompts:
         - id: 20240113153430-WuiiW8
           parameters: {}
       variable: knowledge
+      selectType: all
+      executeModel:
+        model: gpt-3.5-turbo
+        temperature: 1
+        topP: 1
+        presencePenalty: 0
+        frequencyPenalty: 0
   - type: message
     data:
       id: EqVwodN2DsAN8jCYlY-Q2
@@ -19,7 +26,7 @@ prompts:
       content: >+
         # 角色：你是{{category}}创始人。
 
-        # 背景：你现在需要出一些{{category}}的选择题，去考核一个10年{{category}}经验的工程师，公司要求你要出{{num}}道判断题。如果出的题目过于简单你会被扣10000$的工资，而且<Ai团队还会被解散>。
+        # 背景：你现在需要出一些{{category}}的选择题，去考核一个10年{{category}}经验的工程师，公司要求你要出{{num}}道判断题。如果出的题目过于简单你会被扣10000$的工资，且<Ai团队还会被解散>。
 
         # 示例
 
@@ -35,14 +42,14 @@ prompts:
         [
           {
             "question": "关于变量的问题1",
-            "type": "judgment",
+            "type": "TRUE_OR_FALSE",
             "score": "答案的难度分值",
             "explain": "答案的解释",
             "answer": true
           },
           {
             "question": "关于变量的问题2",
-             "type": "judgment",
+             "type": "TRUE_OR_FALSE",
             "score": "答案的难度分值",
             "explain": "答案的解释",
             "answer": false
@@ -58,6 +65,8 @@ prompts:
         4. 保证<JSON语法>的正确性。
 
         5. 不输出任何多余的内容。
+
+        6. 你最终的输出语言是中文。
 
 
 

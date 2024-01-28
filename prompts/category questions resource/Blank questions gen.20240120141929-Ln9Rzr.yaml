@@ -25,11 +25,11 @@ prompts:
         [
           {
             "question": "关于变量的问题1",
-            "type": "comprehension",
+            "type": "ESSAY",
             },
           {
             "question": "关于变量的问题2",
-             "type": "comprehension",
+             "type": "ESSAY",
           }]
         # 规则：
 
