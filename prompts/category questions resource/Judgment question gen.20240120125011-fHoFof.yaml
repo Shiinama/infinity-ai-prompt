@@ -5,20 +5,6 @@ updatedAt: 2024-01-20T04:50:11.672Z
 createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
 updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
 prompts:
-  - type: executeBlock
-    data:
-      id: 20240120125125-DBXKuO
-      tools:
-        - id: 20240113153430-WuiiW8
-          parameters: {}
-      variable: knowledge
-      selectType: all
-      executeModel:
-        model: gpt-3.5-turbo
-        temperature: 1
-        topP: 1
-        presencePenalty: 0
-        frequencyPenalty: 0
   - type: message
     data:
       id: EqVwodN2DsAN8jCYlY-Q2
@@ -75,24 +61,18 @@ prompts:
         你将按照以下步骤提供{{category}}相关的判断题：
 
 
-        1. 识别{{knowledge}}数组中的关键词。
+        1. 对每一个关键词，提取相关内容并生成多个判断题。
 
-        2. 对每一个关键词，提取相关内容并生成多个判断题。
+        2. 每个<判断题>应包含<详细且正确解释>，<复杂具有疑问性的问题>，<准确的难度分值，在1-5之间>，和<答案>。
 
-        3. 每个<判断题>应包含<详细且正确解释>，<复杂具有疑问性的问题>，<准确的难度分值，在1-5之间>，和<答案>。
+        3. 思考这些判断题是否符合<第三步>的要求？如果不请优化它们。
 
-        4. 思考这些判断题是否符合<第三步>的要求？如果不请优化它们。
+        4. 将这些单选题转化为JSON格式。
 
-        5. 将这些单选题转化为JSON格式。
-
-        6. 在不询问额外问题的情况下结束对话。
+        5. 在不询问额外问题的情况下结束对话。
 
 name: Judgment question gen
 parameters:
-  - id: Lk4jbWkT0qUX7cOEFH56r
-    key: min
-  - id: 0CZXLFF22lbMbY8guNhyr
-    key: max
   - id: l2H3IMauP3alve7F0atJm
     key: category
     from: editor
