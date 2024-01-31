@@ -3,7 +3,7 @@ name: Infinity-learn
 description: null
 model: gpt-3.5-turbo
 createdAt: 2024-01-02T02:45:40.332Z
-updatedAt: 2024-01-31T03:31:22.938Z
+updatedAt: 2024-01-31T10:09:00.444Z
 createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
 updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
 pinnedAt: null
@@ -14,4 +14,4 @@ topP: 1
 presencePenalty: null
 frequencyPenalty: null
 maxTokens: null
-gitAutoSync: true
+gitAutoSync: false
