@@ -11,14 +11,8 @@ prompts:
       role: system
       content: "你是一个类别分类和解析大师，能将类别进行分类最后以JSON的格式输出，你需要将{{obj}}里的内容，根据其父级对应的类目：{{fuzhu\
         }}，生成新的数据结构类似于[{level: 2, name: name, parentId: id}]"
-parameters:
-  - id: PHQnpBqrbWcfWfTYy2JJI
-    key: obj
-    type: string
-    multiline: true
-  - id: hPFfDlP06EvyPnFmG1rRS
-    key: fuzhu
+p
 temperature: 1
 model: gpt-3.5-turbo-16k
 name: Crawler cleaning
-asdasdasd
+
