@@ -58,6 +58,8 @@ prompts:
 
         8. 你的题目必须非常的难。
 
+        9. 不允许省略。
+
 
         ## 规则：
 
@@ -97,6 +99,6 @@ parameters:
     key: num/2
     from: editor
 model: gpt-4
-temperature: 0.4
+temperature: 0.9
 presencePenalty: 0
 frequencyPenalty: 0.2

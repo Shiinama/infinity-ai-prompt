@@ -31,6 +31,8 @@ prompts:
 
         7. 你的题目必须非常的难。
 
+        8. 不允许省略。
+
 
         ## 规则：
 
@@ -107,7 +109,7 @@ parameters:
   - id: c1ENVtsQEq6RjdEJ6dgQm
     key: num/2
     from: editor
-temperature: 1.2
+temperature: 1
 frequencyPenalty: 0
 model: gpt-4
 presencePenalty: 0
