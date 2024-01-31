@@ -53,3 +53,4 @@ parameters:
   - id: dKTMTAScrCocRfmceb1el
     key: num
     from: editor
+model: gpt-3.5-turbo

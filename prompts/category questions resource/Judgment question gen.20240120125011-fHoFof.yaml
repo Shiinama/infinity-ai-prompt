@@ -54,6 +54,20 @@ prompts:
 
         6. 你最终的输出语言是中文。
 
+        7.  题目的数量必须是{{num}}道。
+
+        8. 你的题目必须非常的难。
+
+
+        ## 规则：
+
+        1. 不输出注释
+
+        2. 答案只能是字符串由label选项拼接
+
+        3. 分值越高难度越大，有3个梯度，分别对应1-3分，你对于难度系数的打分也非常严格，只有涉及到源码的题目能达到3分。
+
+        4. 源码题的数量有{{num/2}}道
 
 
         # 工作流程：
@@ -78,6 +92,9 @@ parameters:
     from: editor
   - id: e2mQckVFNF8aVGDKi7By7
     key: num
+    from: editor
+  - id: VuAr5ZraqeOyzHHNBpT3K
+    key: num/2
     from: editor
 model: gpt-4
 temperature: 0.4

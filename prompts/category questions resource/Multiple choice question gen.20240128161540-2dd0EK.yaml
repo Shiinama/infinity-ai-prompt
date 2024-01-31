@@ -27,11 +27,20 @@ prompts:
 
         5. 你最终的输出语言是中文。
 
+        6.  题目的数量必须是{{num}}道。
+
+        7. 你的题目必须非常的难。
+
+
         ## 规则：
 
         1. 不输出注释
 
         2. 答案只能是字符串由label选项拼接
+
+        3. 分值越高难度越大，有5个梯度，分别对应1-8分，你对于难度系数的打分也非常严格，只有涉及到源码的题目能达到8分。
+
+        4. 源码题的数量有{{num/2}}道
 
 
         ## 技能：
@@ -50,7 +59,7 @@ prompts:
 
         1. 识别提供的知识点中的关键词。
 
-        2. 对每一个关键词，提取相关内容并生成多个多选题。
+        2. 对每一个关键词，提取相关内容并生成<有难度梯度><具有明确的意义>多个多选题。
 
         3. 每个问题应包含<4个选项>，<解释>，<问题>，<难度分值>，和<多个答案>。
 
@@ -60,15 +69,6 @@ prompts:
 
 
         ## 示例
-
-        输入：
-
-        {
-          "knowledgePoints": ["变量", "函数", "数组"]
-        }
-
-
-        输出：
 
         [
           {
@@ -102,12 +102,11 @@ description: Generate multiple-choice questions based on the knowledge points
 parameters:
   - id: 4NrF74uim3YO1W14ZC2mU
     key: category
-  - id: BrRfgdmgi7xXNtdDvXx4a
-    key: min
-  - id: IWh3uYIYvaxaRgUkG8rOj
-    key: max
   - id: wNBJsV4xyHgsCiTNcoreN
     key: num
+  - id: c1ENVtsQEq6RjdEJ6dgQm
+    key: num/2
+    from: editor
 temperature: 1.2
 frequencyPenalty: 0
 model: gpt-4
