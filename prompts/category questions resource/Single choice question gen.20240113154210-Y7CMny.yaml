@@ -39,9 +39,10 @@ prompts:
 
         1. 选择题的满分是5分。
 
-        2. 分值越高难度越大，有5个梯度，分别对应1-5分，你对于难度系数的打分也非常严格，只有涉及到源码的题目能达到5分。
+        2. 源码题的数量有{{num1}}道、设计思想类题目数量有{{num1}}
 
-        3. 源码题的数量有{{num/2}}道
+        3. 分值越高难度越大，有5个梯度，分别对应1-5分，你对于难度系数的打分也非常严格，只有涉及到源码且比较复杂的题目能达到5分。
+
 
 
         ## 技能：
@@ -105,8 +106,11 @@ parameters:
     key: category
   - id: wNBJsV4xyHgsCiTNcoreN
     key: num
-  - id: Rhk3OhgliFuDAulznX3gD
-    key: num/2
+  - id: uVUNhVG2uE4I2wXt2WuyP
+    key: num1
+    from: editor
+  - id: xo1jRBOBXNfZMwRF205Jx
+    key: num1
     from: editor
 temperature: 0.8
 frequencyPenalty: 0
