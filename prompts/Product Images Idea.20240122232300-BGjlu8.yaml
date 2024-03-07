@@ -1,0 +1,13 @@
+type: image
+id: 20240122232300-BGjlu8
+createdAt: 2024-01-22T15:23:00.274Z
+updatedAt: 2024-01-22T15:23:00.274Z
+createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+name: Product Images Idea
+prompt: |
+  backgroud: starry sky
+  content: Must contain "Infinity Learn"。
+  请不要使用艺术字
+model: dall-e-3
+style: vivid
