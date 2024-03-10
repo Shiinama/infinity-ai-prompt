@@ -1,0 +1,14 @@
+type: prompt
+id: 20240310165714-Epb26l
+createdAt: 2024-03-10T08:57:14.688Z
+updatedAt: 2024-03-10T08:57:14.688Z
+createdBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+updatedBy: z1hfptpNCvPcJwEoCVpgK5iq8dkn7uCad7E
+prompts:
+  - type: message
+    data:
+      id: ineoOS2d23H43pIfxXKv2
+      role: user
+model: gpt-3.5-turbo
+name: 批评
+description: 根据用户的选择
